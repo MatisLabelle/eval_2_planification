@@ -38,7 +38,7 @@ graph TD;
 
 ## Synoptique
 
-![Synoptique](medias/storyboard.png)
+![Synoptique](medias/synoptique.png)
 
 ## Plantation
 
