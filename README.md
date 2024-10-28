@@ -55,6 +55,7 @@ Pour ce projet les technologies nécésaires seront:
 - Cable XLR
 - Caméra
 - Carte d'aquisition vidéo
+- Carte de son
 
 Et les logiciels nécéssaires seront: 
 - Touch Designer
