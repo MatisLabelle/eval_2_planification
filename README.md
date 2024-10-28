@@ -25,7 +25,7 @@ graph TD;
     F --> H;
 
 
-     E --> n2;
+     E --> n2{Diffusion en direct};
     F --> n2;
 
 
