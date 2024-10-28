@@ -25,12 +25,16 @@ graph TD;
     F --> H;
 
 
-     E --> n2{Diffusion en direct};
+     E --> n2;
     F --> n2;
 
 
     H -->|Oui| I[Retour à veille];
     H -->|Non| C;
+    n2("Diffusion en direct")
+	C
+	A --- n1("Caméra");
+    n1 --- n2;
 ````
 ## Scénarimage
 
