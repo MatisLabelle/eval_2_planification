@@ -46,6 +46,8 @@ graph TD;
 
 ## Technologies
 
+Le micro envoie le son dans la carte audio, puis dans l'ordinateur. Le traitenement audio est alors fait par Plugdata qui envoie les données avec midiloop à Qlc+ qui s'occupe des led et à TouchDesigner qui s'occupe du projecteur. Le tout capturé par une caméra qui envoie la vidéo vers une carte d'aquisition puis dans l'ordinateur, qui avec Obs transmet en live sur la plateforme de diffusion choisit par l'utilisateur.
+
 Pour ce projet les technologies nécésaires seront: 
 - Projecteur
 - Lumière LED
