@@ -42,7 +42,7 @@ graph TD;
 
 ## Plantation
 
-![Plantation](medias/storyboard.png)
+![Plantation](medias/plantation.png)
 
 ## Technologies
 
