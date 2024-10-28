@@ -52,10 +52,14 @@ Pour ce projet les technologies nécésaires seront:
 - Ordinateur
 - Instruments de musique
 - Micro
-- Cable XLR
 - Caméra
 - Carte d'aquisition vidéo
 - Carte de son
+- Cable XLR
+- 3x Cable USB
+- Cable HDMI
+- Cable micro HDMI
+- Cable Ethernet    
 
 Et les logiciels nécéssaires seront: 
 - Touch Designer
