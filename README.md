@@ -1,62 +1,67 @@
-# docsify-modele-classique
-modèle de page docsify pour une publication via page sans actions 
+# ConcertNow / ConcertEnDirect
+
+## Concept
+ConcertEnDirect est un projet mélangeant la misique et le multimédia. Ce projet propose aux musiciens amateurs une expérience leur permettant de s'imaginer en train de donner un concert. 
+
+Pour ce faire, le projet consisterait en un processus de traitement du son émis par l'utilisateur (via un instrument ou un micro). Le son reçu serait alors traité pour générer une expérience visuelle dynamique et interactive. L'expérience pourait être diffusée en direct sur une plateforme publique telle que Twitch, YouTube, Kick, TikTok... afin de permettre à l'utilisateur d'avoir une audience, même si celle-ci n'est pas physique. (L'utilisateur peut mettre son propre compte afin de diffuser son contenue sur la plateforme de son choix.)
+
+## Scénario
+Plusieurs instruments seront mis à disposition de l'utilisateur (guitare, piano, percussions, micro...). L'utilisateur aura donc le choix de l'instrument qu'il souhaite utiliser et de ce qu'il veut jouer. Le son sera ensuite traité et transformé en lumière et en vidéo.
+
+Les percussions auraient un effet important sur les lumières, qui clignoteraient au rythme joué. Les instruments mélodiques, comme les guitares, pianos, voix... seraient représentés par des projections et des jeux de lumières. Chaque instrument aurait une couleur spécifique, qui changerait de teinte en fonction de sa fréquence et d'intensité selon son volume.
+
+Le tout disposé devant une caméra pour la diffusion du jam.
+
+````mermaid
+graph TD;
+
+    A[Veille] --> B{Son de l'utilisateur};
+    B --> C;
+    C[Son traité dans le logiciel];
+    C -->|Vidéo| E[Projection lancée];
+    C -->|Lumière| F[Effets lumineux];
+
+    E --> H{Interaction terminée ?};
+    F --> H;
 
 
-## Personalisation
-
-### index.html
-
-#### meta
-
-Est utilisée pour inclure des métadonnées, comme des descriptions ou des informations relatives au contenu de la page, sans les afficher directement aux utilisateurs.
-
-```html
-
-<meta name="description" content="Modèle docsify pour publication classique">
-
-```
-
-#### title
-Définit le titre de la page qui s'affiche dans l'onglet du navigateur et est utilisé par les moteurs de recherche comme le titre principal dans les résultats de recherche.
-
-```html
-<title>Modèle docsify pour publication classique</title>
-```
+     E --> n2;
+    F --> n2;
 
 
+    H -->|Oui| I[Retour à veille];
+    H -->|Non| C;
+````
+## Ambiance
 
+Inspiration pour l'ambiance de l'idéé:
 
-#### window.$docsify 
+[![ILLUMINATOR live performance demo (SOMA labs)](https://i.ytimg.com/vi/go22inMuRgQ/hqdefault.jpg?sqp=-oaymwEpCNACELwBSFryq4qpAxsIARUAAIhCGAHYAQHiAQwIGhACGAYgATgBQAE=&rs=AOn4CLA6CwuT2K_F_SQpNhJi4ErkhUZwhQ)](https://www.youtube.com/watch?v=go22inMuRgQ)
 
-##### name
+Inspiration pour la projection vidéo:
 
-Titre de la page affiché dans la barre de coté
+<img src="https://miro.medium.com/v2/resize:fit:1358/0*X8V9OosecAyGjb97"></img>
 
-```html
-name: 'Modèle Docsify Classique',
-```
+Palette de couleur : 
 
-##### repo
+<img src="assets/Capture.PNG"></img>
 
-Lien vers le repository git du projet à documenter, cliquable depuis l'icone dans la barre de coté
+## Technologies
 
-```html
-repo: 'https://github.com/gllmAR/docsify-modele-classique',
-```
+Pour ce projet les technologies nécésaires seront: 
+- Projecteur
+- Lumière LED
+- Ordinateur
+- Instruments de musique
+- Micro
+- Cable XLR
+- Caméra
+- Carte d'aquisition vidéo
 
-
-#### CSS (optionnelle)
-
-Source et lien vers style CSS lié  [gllmAR/docsify-simple-style](https://github.com/gllmAR/docsify-simple-style/)
-
-
-```html
-<style>
-    :root {
-        --theme-hue:2;
-        --theme-brightness:60%;
-    }
-</style>
-```
-
-
+Et les logiciels nécéssaires seront: 
+- Touch Designer
+- QLC +
+- Plugdata
+- MidiLoop
+- OBSstudio
+- Site de diffuion (twitch, yt, tiktok, kick...)
